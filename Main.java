@@ -37,7 +37,7 @@ public class Main {
                 }
             }
         }
-        System.out.println(name);
+        System.out.println("Rekomendowany film to: "+name);
     }
 
 
@@ -55,7 +55,7 @@ public class Main {
                 }
             }
         }
-        System.out.println(name);
+        System.out.println("Rekomendowany film z kategorii "+category+" to "+name);
     }
 
     static void setFilmAsRented(String filmName, List<Film> films) {
@@ -65,7 +65,6 @@ public class Main {
                 film.setRented(true);
                 System.out.println("Film " + filmName + " wypozyczony");
             }
-
         }
     }
 
@@ -76,7 +75,6 @@ public class Main {
                 film.setRented(false);
                 System.out.println("Film " + filmName + " zwrocony");
             }
-
         }
     }
 
@@ -88,7 +86,6 @@ public class Main {
                 film.setRanking(note);
                 System.out.println("Film zwrocony i oceniony na " + note);
             }
-
         }
     }
 }
